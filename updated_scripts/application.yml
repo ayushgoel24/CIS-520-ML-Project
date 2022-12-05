@@ -1,0 +1,10 @@
+carla:
+  host: "127.0.0.1" # IP of the host server (default: 127.0.0.1)
+  port: 2000 # TCP port to listen to (default: 2000)
+  numOfScenes: 10
+  sync: True # Synchronous mode execution
+  hybridPhysicsMode: True # enable/disable hybrid physics mode
+
+patterns:
+  vehicle: "vehicle.*" # vehicles filter (default: "vehicle.*")
+  walker: "walker.pedestrian.*" # pedestrians filter (default: "walker.pedestrian.*")
