@@ -4,6 +4,7 @@ carla:
   numOfScenes: 10
   sync: True # Synchronous mode execution
   hybridPhysicsMode: True # enable/disable hybrid physics mode
+  tmPort: 8000
 
 patterns:
   vehicle: "vehicle.*" # vehicles filter (default: "vehicle.*")
