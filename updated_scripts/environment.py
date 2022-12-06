@@ -2,7 +2,7 @@ import yaml
 
 class ApplicationProperties( object ):
 
-    def __init__( self, propertiesFilePath ) -> None:
+    def __init__( self, propertiesFilePath: str ) -> None:
         self._propertiesFile = propertiesFilePath
         self._applicationProperties = None
 
@@ -10,7 +10,7 @@ class ApplicationProperties( object ):
         with open( self._propertiesFile, 'r') as file:
             self._applicationProperties = yaml.safe_load(file)
 
-    def get_property_value( self, propertyName ):
+    def get_property_value( self, propertyName: str ):
         properties = propertyName.split( "." )
 
         propertyTree = self._applicationProperties
