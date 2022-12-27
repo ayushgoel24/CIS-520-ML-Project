@@ -18,6 +18,15 @@ We humans change our trajectory based on the obstacles we
 encounter, so it is essential that we take the obstacles in the
 scene as input to our models to predict accurately.
 
+## Results
+| Errors              | Vanilla LSTM | GRU      |Social LSTM | OLSTM  |
+| :----:              |    :----:    |  :----:  |   :----:   | :----: |
+|Avg train disp err   |0.771         | 0.7029   |0.333       |0.407   |
+|Final train disp err |1.597         | 1.2921   |0.5021      |0.7752  |
+|Avg test disp err    |1.2648        |1.3957    |1.2176      |1.236   |
+|Final test disp err  |2.755         |2.6529    |2.543       |2.643   |
+
+More results and graphs are available in [report](./report.pdf)
 ## Conclusion and Discussion
 We have in our work presented different versions of LSTMs
 that can predict human trajectory. By comparing the results of
